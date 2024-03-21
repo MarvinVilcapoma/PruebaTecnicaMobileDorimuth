@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFiles" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <fa-icon [icon]="iconfaFile"></fa-icon> Files
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="main/files">Files</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEdit" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <fa-icon [icon]="iconfaEdit"></fa-icon>
+            Edit
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownEdit">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownEditSub1">
+                <fa-icon [icon]="iconfaArchive"></fa-icon>
+                Archieve
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownEditSub1">
+                <li><a class="dropdown-item" href="#">Archieve Detail</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownEditSub2">
+                <fa-icon [icon]="iconfaEdit"></fa-icon>
+                Edit
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownEditSub2">
+                <li><a class="dropdown-item" href="#">Edit Detail</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUsers" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <fa-icon [icon]="iconfaUser"></fa-icon>
+            Users
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Users</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEvents" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <fa-icon [icon]="iconfaCalendar"></fa-icon>
+            Events
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Events</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <fa-icon [icon]="iconfaPowerOff"></fa-icon>
+            Quit</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
